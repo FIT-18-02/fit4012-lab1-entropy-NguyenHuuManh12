@@ -31,7 +31,7 @@ int mod_inverse(int a, int m) {
 
     if (g != 1) {
         // Nghịch đảo modulo chỉ tồn tại khi a và m nguyên tố cùng nhau
-        return -1;
+        return 0;
     } else {
         // x có thể âm, ta cần đưa về khoảng [0, m-1]
         return (x % m + m) % m;
